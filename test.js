@@ -1,3 +1,4 @@
+_$U6={};
 window={};
 var _$Zy = 0
     , _$ru = []
@@ -439,7 +440,27 @@ _$z3 = _$xV(_$z3);
 _$V1 = _$xV(_$V1);
 var _$op = [0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 4, 4, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 0, 0, 0, 0, 0, 0, 0, 11, 11, 11, 11, 11, 11, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0, 3, 0, 11, 11, 11, 11, 11, 11, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0];
 ;;;;;var _$y8 = {};
-
+;;;;;;_$U6._$GD = _$gq;
+// _$U6._$GD = _$gq;
+_$U6._$oI = _$IX;
+_$U6._$hn = _$85;
+_$U6._$W6 = _$fX;
+_$U6._$mk = _$eb;
+_$U6._$05 = _$kE;
+_$U6._$_$ = _$Gi;
+_$U6._$Kt = _$EX;
+_$U6._$H6 = _$bU;
+_$U6._$Tz = _$FB;
+_$U6._$ih = _$3w;
+_$U6._$xk = _$zg;
+_$U6._$75 = _$YT;
+_$U6._$Jq = _$Ch;
+_$U6._$2C = _$NW;
+_$U6._$dL = _$En;
+_$U6._$B2 = _$Qs;
+_$U6._$cC = _$Vh;
+_$U6._$0e = _$gg;
+_$U6._$vr = _$sY;
 var _$yi = 64;
 var _$Dg = 100;
 var _$DH = 0;
@@ -4211,8 +4232,8 @@ function _$UG(_$yP) {
 function _$3w(_$yP) {
     var _$yP = 100;
     var _$jy = 3;
-    if (_$Iy.top == null)
-        return _$jy;
+    // if (_$Iy.top == null)//_$Iy.top=window.top  当前不可能为空
+    //     return _$jy;
     return _$yP + _$jy;
 }
 function _$zg() {
@@ -5288,7 +5309,7 @@ function _$hn(_$yP, _$CT) {
 function _$0b(_$yP) {
     var _$jy = _$yP[_$ZD[9]](0, 16), _$yj, _$2R = 0, _$zT, _$Ld = 'abs';
     // _$U6._$td(_$jy);
-    _$jy=swith(_$yP);
+     _$jy=swith(_$jy);
     _$zT = _$jy.length;
     while (_$2R < _$zT) {
         _$yj = _$pw[_$Ld](_$jy[_$2R]);
@@ -5310,190 +5331,8 @@ function _$xV(_$yP) {
     }
     return _$jy;
 }
-function swith(_$Xi) {
-    // 数组变换//
-    // _$gv._$11(_$6n);
-    function _$vK(_$JX, _$8R) {
-        return Math.abs(_$JX) % _$8R;
-    }
-    function _$9F(_$Xi) {
-        _$Xi[_$vK(_$i8(_$Xi), 16)] = _$iG(_$Xi);
-        var _$d2 = _$Xi[_$vK(_$G5(), 16)];
-        var _$d2 = _$PT(_$Xi);
-        var _$mu = _$e7(_$Xi);
-        var _$mu = _$E6();
-        _$Xi[_$vK(_$kb() - _$Xi[_$vK(_$zt(), 16)], 16)] = _$Xi[_$vK(_$S2() + _$Sm(), 16)];
-        _$Xi[2] = _$kb() - _$Xi[_$vK(_$zt(), 16)];
-        _$da(_$Xi);
-        _$Xi[10] = _$S2() - _$Xi[_$vK(_$oJ(), 16)];
-        // return _$Xi[_$vK(_$kb() - _$Xi[_$vK(_$zt(), 16)], 16)];
-        return _$Xi.slice(0,16);
-        // return _$Xi[-1,16]
 
-    }
-    function _$i8(_$Xi) {
-        _$Xi[4] = _$1i();
-        _$Xi[_$vK(_$kb(), 16)] = _$6U();
-        var _$d2 = _$ja();
-        var _$1B = _$H6();
-        return _$E6() + _$Rz();
-    }
-    function _$1i() {
-        return 2
-    }
-    function _$kb() {
-        return 9
-    }
-    function _$6U() {
-        return 15
-    }
-    function _$ja() {
-        return 8
-    }
-    function _$H6() {
-        return 6
-    }
-    function _$E6() {
-        return 13
-    }
-    function _$Rz() {
-        return 3
-    }
-    function _$iG(_$Xi) {
-        if (_$8G()) {
-            _$Xi[_$vK(_$ja(), 16)] = _$H6();
-        }
-        _$Xi[0] = _$cr();
-        var _$1B = _$1i();
-        if (_$8G()) {
-            _$Xi[11] = _$S2();
-        }
-        _$Xi[14] = _$zt();
-        _$Uz(_$Xi);
-        return _$i0(_$Xi);
-    }
-    function _$8G() {
-        return 5
-    }
-    function _$cr() {
-        return 14
-    }
-    function _$S2() {
-        return 1
-    }
-    function _$G5() {
-        return 0
-    }
-    function _$zt() {
-        return 12
-    }
-    function _$Uz(_$Xi) {
-        var _$mu = _$Sm();
-        var _$1B = _$E6();
-        var _$1B = _$kb();
-        _$Xi[_$vK(_$zt(), 16)] = _$GM();
-        return _$ja();
-    }
-    function _$Sm() {
-        return 7
-    }
-    function _$GM() {
-        return 10
-    }
-    function _$i0(_$Xi) {
-        _$Xi[_$vK(_$E6(), 16)] = _$Rz();
-        _$Xi[9] = _$6U();
-        _$Xi[_$vK(_$GM(), 16)] = _$ja();
-        return _$H6();
-    }
-    function _$PT(_$Xi) {
-        _$Xi[_$vK(_$8G(), 16)] = _$n3();
-        _$Xi[1] = _$Sm();
-        _$M7(_$Xi);
-        _$G2(_$Xi);
-        return _$8G();
-    }
-    function _$n3() {
-        return 11
-    }
-    function _$M7(_$Xi) {
-        _$Xi[3] = _$kb();
-        _$Xi[15] = _$8G();
-        var _$mu = _$H6();
-        var _$d2 = _$oJ();
-        _$Xi[2] = _$G5();
-        return _$cr();
-    }
-    function _$oJ() {
-        return 4
-    }
-    function _$G2(_$Xi) {
-        _$Xi[_$vK(_$n3(), 16)] = _$S2();
-        _$Xi[7] = _$E6();
-        _$Xi[3] = _$kb();
-        return _$6U();
-    }
-    function _$e7(_$Xi) {
-        var _$d2 = _$Rz();
-        var _$d2 = _$kb();
-        _$Xi[15] = _$8G();
-        _$Xi[11] = _$S2();
-        return _$Sm();
-    }
-    function _$da(_$Xi) {
-        var _$d2 = _$GM();
-        if (_$IY(_$Xi)) {
-            _$Xi[3] = _$kb();
-        }
-        var _$1B = _$zt();
-        if (_$Xi[_$vK(_$oJ(), 16)]) {
-            if (_$Rz()) {
-                var _$d2 = _$GM();
-            }
-        }
-        _$0p(_$Xi);
-        _$Xi[6] = _$E6() + _$Rz();
-        _$fY(_$Xi);
-        var _$1B = _$E6();
-        return _$Xi[_$vK(_$kb() + _$6U(), 16)];
-    }
-    function _$IY(_$Xi) {
-        _$Xi[_$vK(_$E6(), 16)] = _$Rz();
-        var _$1B = _$zt();
-        var _$d2 = _$GM();
-        _$Xi[_$vK(_$S2(), 16)] = _$Sm();
-        return _$E6();
-    }
-    function _$0p(_$Xi) {
-        var _$1B = _$ja();
-        var _$1B = _$Rz();
-        if (_$6U()) {
-            var _$mu = _$H6();
-        }
-        if (_$zt()) {
-            _$Xi[_$vK(_$n3(), 16)] = _$S2();
-        }
-        var _$d2 = _$6U();
-        var _$d2 = _$8G();
-        return _$Xi[_$vK(_$ja(), 16)];
-    }
-    function _$fY(_$Xi) {
-        _$Xi[12] = _$GM();
-        _$Xi[_$vK(_$S2(), 16)] = _$Sm();
-        _$Xi[13] = _$Rz();
-        _$Xi[_$vK(_$cr(), 16)] = _$zt();
-        return _$QZ(_$Xi);
-    }
-    function _$QZ(_$Xi) {
-        _$Xi[_$vK(_$S2(), 16)] = _$Sm();
-        _$Xi[_$vK(_$1i(), 16)] = _$G5();
-        var _$1B = _$8G();
-        var _$d2 = _$n3();
-        return _$S2();
-    }
-    aa=_$9F(_$Xi);
-    return aa;
-}
+
 
 function _$Nf(_$yP, _$CT, _$IJ) {
     if (typeof _$yP === _$ZD[7])
@@ -5501,6 +5340,7 @@ function _$Nf(_$yP, _$CT, _$IJ) {
     var _$jy = _$2P(_$CT, _$IJ);
     return _$jy._$U6(_$yP, true);
 }
+
 
 function f2() {
     //通过获取到的cookies来生成数组
@@ -5519,36 +5359,39 @@ function f2() {
 
 function f() {
     var _$jy = _$cc(_$uX());//次此处 三次相同
-    var _$yj =f2();
-    var _$2R = _$yj[1];
+    var _$yj =f2();//第一个和第二个相同
+    var _$2R = _$yj[1];//生成相同
     var _$zT = _$qS();
     _$fd = _$zT <= _$DH;//_$DH为时间戳 此处待定
     _$DH = _$zT;
-    var _$Ld = _$lJ([(_$zT / 0x100000000) & 0xffffffff, _$zT & 0xffffffff, _$pw[_$ZD[34]](_$CG / 1000), _$pw[_$ZD[34]](_$4W / 1000)]);
+    var _$Ld = _$lJ([(_$zT / 0x100000000) & 0xffffffff, _$zT & 0xffffffff, _$pw[_$ZD[34]](_$CG / 1000), _$pw[_$ZD[34]](_$4W / 1000)]);//_$4W 待确定
     // var _$w8 = _$KV(268, _$yP);//生成数组 动态随机
-    // var _$w8=[254, 3, 1, 0, 1, 2, 64, 1, 128, 0, 0, 0, 0, 0, 0, 14, 1, 64, 35, 0, 139, 228, 119, 166, 151, 57, 48, 141, 21, 32, 6, 126, 180, 127, 103, 103, 240, 0, 175, 20, 144, 240, 118, 4, 118, 0, 0, 4, 239];
+    var _$w8=three();//当前还需继续确定  待跟进
 
-    // var _$w8 = [254, 3, 2, 0, 1, 2, 96, 1, 128, 0, 0, 0, 0, 0, 0, 14, 1, 86, 200, 57, 240, 24, 116, 229, 23, 125, 0, 218, 193, 155, 79, 28, 203, 101, 11, 181, 126, 100, 0, 0, 0, 179, 150, 113, 94, 225, 4, 118, 0, 0, 4, 239];
-    var _$w8=three();
+    _$yj = _$Ld[_$ZD[29]](_$ik, _$w8);  //此处生成相同 算法没问题
+    var _$JO = _$eR(_$2R[_$ZD[29]](_$yj));//此处算法没错
+    // var _$JO=169;
 
-    _$yj = _$Ld[_$ZD[29]](_$ik, _$w8);
-    var _$JO = _$eR(_$2R[_$ZD[29]](_$yj));
     for (_$TS = 0; _$TS < _$yi + 1; _$TS++) {
-        _$2R[_$TS] ^= _$JO;
+        _$2R[_$TS] ^= _$JO;  //ok
     }
 
+    // debugger;
+    var _$xV = f1(_$jy); //(685, _$jy); 待跟进  数据相同生成却不一样   已确定
+    // kmm=[109, 209, 71, 60, 80, 2, 202, 40, 98, 205, 109, 86, 65, 134, 205, 19, 78, 210, 126, 43, 225, 109, 182, 78, 150, 29, 73, 219, 140, 48, 127, 100];
+    // var _$xV = f1(kmm);//已确定
 
-    var _$xV = f1(_$jy);
-    var _$3L = _$Nf(_$yj, _$xV);
+    var _$3L = _$Nf(_$yj, _$xV);//当前动态 无法确定准确定 ，但长度相同  最后判定
     var  aa=_$n_ + _$hn(_$2R[_$ZD[29]](_$JO, _$3L));
+
     return aa;
     // console.log(aa);
     // console.log(aa.length)
 }
 
 
-function f1(_$yP) {
-    var _$jy = _$pF(_$yP, _$0b(_$yP));
+function f1(_$yP) {  //已确定
+    var _$jy = _$pF(_$yP, _$0b(_$yP));//_$0b(_$yP) 生成准确  _$pF(_$yP, _$0b(_$yP))
     var _$yj = _$pF(_$cc(_$mC()));
     var _$2R = [];
     for (_$zT = 0; _$zT < 16; _$zT++) {
@@ -5557,21 +5400,206 @@ function f1(_$yP) {
     }
     return _$2R
 
+}
 
+
+function swith(_$2o) {
+    function _$Vr(_$eA, _$rl) {
+        return Math.abs(_$eA) % _$rl;
+    }
+    function _$Iy(_$2o) {
+        _$2o[_$Vr(_$gN(_$2o), 16)] = _$IA(_$2o);
+        var _$se = _$2o[_$Vr(_$mY(), 16)];
+        var _$se = _$qS(_$2o);
+        var _$tl = _$gv(_$2o);
+        var _$tl = _$fc();
+        _$2o[_$Vr(_$ZU() - _$2o[_$Vr(_$TC(), 16)], 16)] = _$2o[_$Vr(_$Dk() + _$hY(), 16)];
+        _$2o[2] = _$ZU() - _$2o[_$Vr(_$TC(), 16)];
+        _$s4(_$2o);
+        _$2o[10] = _$Dk() - _$2o[_$Vr(_$q9(), 16)];
+        // return _$2o[_$Vr(_$ZU() - _$2o[_$Vr(_$TC(), 16)], 16)];
+        return _$2o.slice(0,16);
+
+    }
+    function _$gN(_$2o) {
+        _$2o[4] = _$nt();
+        _$2o[_$Vr(_$ZU(), 16)] = _$rt();
+        var _$se = _$8z();
+        var _$D7 = _$l5();
+        return _$fc() + _$vV();
+    }
+    function _$nt() {
+        return 2
+    }
+    function _$ZU() {
+        return 9
+    }
+    function _$rt() {
+        return 15
+    }
+    function _$8z() {
+        return 8
+    }
+    function _$l5() {
+        return 6
+    }
+    function _$fc() {
+        return 13
+    }
+    function _$vV() {
+        return 3
+    }
+    function _$IA(_$2o) {
+        if (_$Ew()) {
+            _$2o[_$Vr(_$8z(), 16)] = _$l5();
+        }
+        _$2o[0] = _$eR();
+        var _$D7 = _$nt();
+        if (_$Ew()) {
+            _$2o[11] = _$Dk();
+        }
+        _$2o[14] = _$TC();
+        _$9D(_$2o);
+        return _$U2(_$2o);
+    }
+    function _$Ew() {
+        return 5
+    }
+    function _$eR() {
+        return 14
+    }
+    function _$Dk() {
+        return 1
+    }
+    function _$mY() {
+        return 0
+    }
+    function _$TC() {
+        return 12
+    }
+    function _$9D(_$2o) {
+        var _$tl = _$hY();
+        var _$D7 = _$fc();
+        var _$D7 = _$ZU();
+        _$2o[_$Vr(_$TC(), 16)] = _$KS();
+        return _$8z();
+    }
+    function _$hY() {
+        return 7
+    }
+    function _$KS() {
+        return 10
+    }
+    function _$U2(_$2o) {
+        _$2o[_$Vr(_$fc(), 16)] = _$vV();
+        _$2o[9] = _$rt();
+        _$2o[_$Vr(_$KS(), 16)] = _$8z();
+        return _$l5();
+    }
+    function _$qS(_$2o) {
+        _$2o[_$Vr(_$Ew(), 16)] = _$N3();
+        _$2o[1] = _$hY();
+        _$mF(_$2o);
+        _$b_(_$2o);
+        return _$Ew();
+    }
+    function _$N3() {
+        return 11
+    }
+    function _$mF(_$2o) {
+        _$2o[3] = _$ZU();
+        _$2o[15] = _$Ew();
+        var _$tl = _$l5();
+        var _$se = _$q9();
+        _$2o[2] = _$mY();
+        return _$eR();
+    }
+    function _$q9() {
+        return 4
+    }
+    function _$b_(_$2o) {
+        _$2o[_$Vr(_$N3(), 16)] = _$Dk();
+        _$2o[7] = _$fc();
+        _$2o[3] = _$ZU();
+        return _$rt();
+    }
+    function _$gv(_$2o) {
+        var _$se = _$vV();
+        var _$se = _$ZU();
+        _$2o[15] = _$Ew();
+        _$2o[11] = _$Dk();
+        return _$hY();
+    }
+    function _$s4(_$2o) {
+        var _$se = _$KS();
+        if (_$_l(_$2o)) {
+            _$2o[3] = _$ZU();
+        }
+        var _$D7 = _$TC();
+        if (_$2o[_$Vr(_$q9(), 16)]) {
+            if (_$vV()) {
+                var _$se = _$KS();
+            }
+        }
+        _$Kv(_$2o);
+        _$2o[6] = _$fc() + _$vV();
+        _$0b(_$2o);
+        var _$D7 = _$fc();
+        return _$2o[_$Vr(_$ZU() + _$rt(), 16)];
+    }
+    function _$_l(_$2o) {
+        _$2o[_$Vr(_$fc(), 16)] = _$vV();
+        var _$D7 = _$TC();
+        var _$se = _$KS();
+        _$2o[_$Vr(_$Dk(), 16)] = _$hY();
+        return _$fc();
+    }
+    function _$Kv(_$2o) {
+        var _$D7 = _$8z();
+        var _$D7 = _$vV();
+        if (_$rt()) {
+            var _$tl = _$l5();
+        }
+        if (_$TC()) {
+            _$2o[_$Vr(_$N3(), 16)] = _$Dk();
+        }
+        var _$se = _$rt();
+        var _$se = _$Ew();
+        return _$2o[_$Vr(_$8z(), 16)];
+    }
+    function _$0b(_$2o) {
+        _$2o[12] = _$KS();
+        _$2o[_$Vr(_$Dk(), 16)] = _$hY();
+        _$2o[13] = _$vV();
+        _$2o[_$Vr(_$eR(), 16)] = _$TC();
+        return _$mC(_$2o);
+    }
+    function _$mC(_$2o) {
+        _$2o[_$Vr(_$Dk(), 16)] = _$hY();
+        _$2o[_$Vr(_$nt(), 16)] = _$mY();
+        var _$D7 = _$Ew();
+        var _$se = _$N3();
+        return _$Dk();
+    }
+    aa=_$Iy(_$2o);
+    return aa;
 
 }
 
 
-
-function f4() {
+function f4() {  // 目前没有完成
     var _$jy = _$W6(_$U6._$Sv);
-    [_$U6._$rC, _$U6._$6_, _$U6._$C5, _$U6._$vt]=[11, 126, 101, 181];// < 178)更进//定值
-    // console.log([_$U6._$rC, _$U6._$6_, _$U6._$C5, _$U6._$vt]);
+    // [_$U6._$rC, _$U6._$6_, _$U6._$C5, _$U6._$vt]=[11, 126, 101, 181];// < 178)更进//定值  //
+    [_$U6._$rC, _$U6._$6_, _$U6._$C5, _$U6._$vt]= [203, 126, 103, 181];  //暂定为定值
+    // [_$U6._$rC, _$U6._$6_, _$U6._$C5, _$U6._$vt]=[100, 224, 180, 203]
+    // console.log('当前数组是',[_$U6._$rC, _$U6._$6_, _$U6._$C5, _$U6._$vt]);
     return _$jy[_$ZD[29]]([_$U6._$rC, _$U6._$6_, _$U6._$C5, _$U6._$vt]);
+    //[203, 126, 103, 181]
+    //[181, 126, 103, 203]
+
 }
 
 function three() {
-    debugger;
     //第三次生成数组生成
     var _$2R = 0;
     var _$SG=_$hY();
@@ -5585,13 +5613,15 @@ function three() {
     _$zT[_$jy++]=[1, 128, 4, 4, 0, 0, 0, 2];//25166852  2  [_$H6, _$Tz]
     _$zT[_$jy++]=14;
     _$zT[_$jy++]=1;
-    _$zT[_$jy++]=f4(668); //[162, 77, 135, 92, 17, 106, 127, 89, 147, 245, 216, 116, 164, 11, 224, 50, 203, 126, 181, 103]
-     _$yj = [224, 206, 175, 65, 123, 63, 87, 150, 148, 16, 112, 163, 127, 127, 33, 231, 105, 206, 242, 10];//_$KV(32);//
+    _$zT[_$jy++]=f4(668); //[162, 77, 135, 92, 17, 106, 127, 89, 147, 245, 216, 116, 164, 11, 224, 50, 203, 126, 181, 103]  待确定
+    //[231, 50, 242, 13, 87, 129, 153, 151, 57, 97, 31, 67, 154, 34, 252, 42, 203, 180, 100, 224]
+    //[224, 206, 175, 65, 123, 63, 87, 150, 148, 16, 112, 163, 127, 127, 33, 231, 105, 206, 242, 10]
+    _$yj = [224, 206, 175, 65, 123, 63, 87, 150, 148, 16, 112, 163, 127, 127, 33, 231, 105, 206, 242, 10];//_$KV(32);// 目前改为定值
     _$zT[_$jy++]=_$yj;
     var _$Cc=_$hY();
-    _$zT[_$jy++] = _$W6('Nrq6pxpVaJ_txwOzS_JMbRjICol');
-    _$zT[_$jy++] = _$W6('ME8CVTpv2TBOiYLWNZts6ucTlM0');
-    _$zT[_$jy++] = _$W6('X1bKDTh0Ed0NpEMfwZELLhT1UYq');
+    _$zT[_$jy++] = _$W6('Nrq6pxpVaJ_txwOzS_JMbRjICol'); //[164, 16, 55, 68, 148, 84, 192, 222, 138, 37, 216, 237, 199, 163, 91, 153, 154, 159, 216, 113]
+    _$zT[_$jy++] = _$W6('ME8CVTpv2TBOiYLWNZts6ucTlM0');//[108, 135, 182, 83, 84, 103, 151, 91, 227, 57, 90, 12, 167, 194, 147, 223, 48, 181, 17, 189]
+    _$zT[_$jy++] = _$W6('X1bKDTh0Ed0NpEMfwZELLhT1UYq');//[185, 41, 150, 27, 82, 244, 35, 253, 41, 68, 134, 225, 119, 194, 40, 160, 189, 82, 93, 80]
     _$zT[_$jy++]=100;
     _$zT[_$jy++]=[0,0]; //   _$zT[_$jy++] = _$KV(258, _$Iy.Math[_$ZD[75]](_$V4));    _$V4=0
     _$zT[_$jy++]=0;//_$KV(585)
@@ -5612,72 +5642,56 @@ function three() {
 }
 
 function f3(key,key2,key3,key4,key5,key6,key7) {
-    _$U6={
-        _$b9: key,//"8H8g6NH6EDa",//22)
-        _$Vz: key2,//2,//[0, 1, 3, 7, 0xf, 0x1f];
-        _$WP: key3,//17,//% 64;
-        _$gb: key4,//131, //1.164 + 1))
-        // _$eA: key5"eMZl.JHPzo5ZvE.dXNxzT7",//21)
-        _$1j: key7,//".aNe.df3nOA",//19)
-        _$Sv:key6,// "oPsAoGio4sRNJrlBcgsfnG",  ////< 111)
+    // _$U6={
+    //     _$b9: key,//"8H8g6NH6EDa",//22)
+    //     _$Vz: key2,//2,//[0, 1, 3, 7, 0xf, 0x1f];
+    //     _$WP: key3,//17,//% 64;
+    //     _$gb: key4,//131, //1.164 + 1))
+    //     _$eA: key5,//"eMZl.JHPzo5ZvE.dXNxzT7",//21)
+    //     _$1j: key7,//".aNe.df3nOA",//19)
+    //     _$Sv:key6,// "oPsAoGio4sRNJrlBcgsfnG",  ////< 111)
+    //     _$rC:'_$VQ',
+    //     // _$fZ: "pSShEGmKjLq",//暂定
+    //
+    //     // _$hy: -35,
+    // }
+    _$U6._$b9=key;
+    _$U6._$Vz=key2;
+    _$U6._$WP=key3;
+    _$U6._$gb=key4;
+    _$U6._$eA=key5;
+    _$U6._$Sv=key6;
+    _$U6._$1j=key7;
+    // _$U6._$rC='_$VQ'
+    //_$Tz
 
-        // _$fZ: "pSShEGmKjLq",//暂定
 
-        // _$hy: -35,
-    }
-    ;;;;;;_$U6._$GD = _$gq;
-    // _$U6._$GD = _$gq;
-    _$U6._$oI = _$IX;
-    _$U6._$hn = _$85;
-    _$U6._$W6 = _$fX;
-    _$U6._$mk = _$eb;
-    _$U6._$05 = _$kE;
-    _$U6._$_$ = _$Gi;
-    _$U6._$Kt = _$EX;
-    _$U6._$H6 = _$bU;
-    _$U6._$Tz = _$FB;
-    _$U6._$ih = _$3w;
-    _$U6._$xk = _$zg;
-    _$U6._$75 = _$YT;
-    _$U6._$Jq = _$Ch;
-    _$U6._$2C = _$NW;
-    _$U6._$dL = _$En;
-    _$U6._$B2 = _$Qs;
-    _$U6._$cC = _$Vh;
-    _$U6._$0e = _$gg;
-    _$U6._$vr = _$sY;
 }
 
 function run(meta,key,key2,key3,key4,key5,key6,key7) {
+
     // var meta="{q|gKnfB8kytiDEWVum0lrN.DPS7HVLUYSAkclQkU6Y4tmZzQqSJmGadUOWtFol1wAyeWb9xMPmToA7l8fS0MGlslKgAJS0WWsZIorW3kCa_FrAxoc0THCVLxsAkok0_ouTGcceTl1ZMJulxWAL0Mu7NmKEnmAZSDDLLoSVjcSNscaZ0Yc2AqAYPiuWeFGqeqqyFiOqVmkA5HVlCrCZZcp3erkVLtO0gxGE4M1Zpx19UoPf7mGHgk87UScoAqdTX0u4KmImBCc.fEeYj6k_ZlBANCauGWz3yjAoMtHyTZWLVwZ2I9A8yD4p65Y5prg08Oq4VkBatgQey0nahAF7ryLr6ZUHxU4SuapBp8k136XAOo30eljTuAgmeehhIUrtA;4kUyzUi8kgD7ll6J2MqFBA;YsxeZKHdChC3iV9aU8G.Wwt1074790432r0VF7mMem6SUIzsdm4SKHmQq tkOLnVCrh80GX1UwiFaE7tDQ2FPwG31gzFvG7DYlL3cpftDLYVK9XEbZGF6W7iKqQKK2zx9TP8OTU3mQqKpmfrCfGsnrFMsQWFGY3HDajRfwGkTGTJuN7EVVk1OJ3osL.8TTEECQrAm2grDAyiONFob2IRrz0AC7npAQ6pYLSMsxIlOGiiAxBh2LVV1wfsKu2pQxbZbkcHQRNgk6tMQRmBO6KpwzmdoIdshyz4s5_EJfZLVHKABp3626S1_x049k4w_04dVhBp874ZKkwYzNeu9BWiRpBZkM8sZymd0DUFzNKgD6XRi9eeKoowB945uIUYH7_Zo6KYzSEyvXiUEeECYMTizrCukBeiZYMCDhHV3Ge2VDXwhx0d1u28twP7bBThxJfvv8mpEWgN61zIH9G7Ccbs3fqgVdCWqqqqqqqqHWZGcZAkacdEl5GL{VqFZa2siciZxPaDsKMyNC6DUcFwQuGOKqiZf9nvsYQeGB6KkQFFYfZuBCJB2qN6K7w_JRPDiPRtNTyDc4QFrgM8AeJi9a9A1xEx9a2s1ThEllG1PVhyGRCO5tNWxAk162r4r1q!x7z,aac,amr,asm,avi,bak,bat,bmp,bin,c,cab,css,csv,com,cpp,dat,dll,doc,dot,docx,exe,eot,fla,flc,fon,fot,font,gdb,gif,gz,gho,hlp,hpp,htc,ico,ini,inf,ins,iso,js,jar,jpg,jpeg,json,java,lib,log,mid,mp4,mpa,m4a,mp3,mpg,mkv,mod,mov,mim,mpp,msi,mpeg,obj,ocx,ogg,olb,ole,otf,py,pyc,pas,pgm,ppm,pps,ppt,pdf,pptx,png,pic,pli,psd,qif,qtx,ra,rm,ram,rmvb,reg,res,rtf,rar,so,sbl,sfx,swa,swf,svg,sys,tar,taz,tif,tiff,torrent,txt,ttf,vsd,vss,vsw,vxd,woff,woff2,wmv,wma,wav,wps,xbm,xpm,xls,xlsx,xsl,xml,z,zip,apk,plist,ipaqqqqqqlE07WCxAYrF9RHAsNlFVR7lbGpWfVdmkgpifQgp6Yltlpup6VYxpQbAoQVEGDdfe167qr0hCF_Ej7nb.7ul3650qqqqqqqqqKZJbnkOGNY6jfm5F96bPRsaqc80~FsaT4wk95J67k86pEiTLCUAR_wngdUkz3ITg7Fvp1xv0mRPr5wPV9wpYBE2Y5mop7mK24AGx7mfarAkLAHp2gsopBwTVI1nNIhA7xYufUr2AwUUp8DY7LkSw6Dqx4QapQkGygUopWrbG_rGqioOwdwq90xu3cI1abDogPraY5EcVNJs7qi1e0rax9xaAJrvZ6cS7fMPGprDW2DOaMk19TJUAIqsVUFaTjDfGvrOzREuQkE10BtuwZoU7R3A0Nk6yw8m2fruSYhmaXqsSEtr94msTq3plNl6yr8lTfluSrqkQRiaAKc0a4c1hUwip_XnuW8Xa8eAO884aQ4oM4qw9qdpdvx8N0hCrqYA1EMh0Al4096r0.tKHCPn0AY7mwTWx0dEYIitWsFf_44SCV5kX.jZ9GA5Aqqqqqqqq";
     f3(key,key2,key3,key4,key5,key6,key7);
     _$Tf(_$aj(meta));//此处传递meta
     _$U7();
+    _$EA();
     var _$dH = _$uc + _$ZD[536];
     var _$UZ = _$dH;
     _$ik=_$m5()[_$ZD[9]](0, 4);//var _$ik = _$KV(691);//生成四维数组
     var _$2R = _$BD(26);
     kmkk = _$tV(_$2R, _$mC());
-    // console.log(kmkk);
-    // _$U6._$6_ = _$U6._$W6(_$ik, _$DH);
-    // _$U6._$rC = _$U6._$dL(_$yj, _$2R);//(_$yj, _$2R)=(0,0)
-    // _$U6._$C5 = _$U6._$Tz(); //_$FB
-    // _$U6._$vt = _$U6._$GD();//_$GD=[_$U6._$vt]
     // _$EA();
-    // (_$a6());
-    // _$BJ();//此处第一次生成cookies
+    (_$a6());
+    _$BJ();//此处第一次生成cookies
     var cookies=f();//生成cookies
-    // console.log(cookies);
-    // console.log(cookies.length);
+    // // console.log(cookies);
     return cookies;
-    // var a=three();
-    // console.log(a.length);
+
 }
 // run()
-
 function gettest() {
-    meta ="{qqqKwZjh4fQahIfym0YUONCU1AhiUwpIYbel2Tqql1jy2r0qqqhJo2Rrz5PidKqq|g1nTdpAxWIalRKrNoIqWfYAT7Q6GuQk25QvlJY1YB8vAQsGWWEYEgY6eylna2JAZlk6QgrcZurAWVHpLuDGAFDuaikvSdccaQxqlFtrLaokegEp7nQPApoplrxpWStO9PHPV3Faa3WuqQJ1qKicGpJnqvIAGZcul0icgphPGRo1ZStpZPkG3jtPAgrn741n9TmcarK67W80ZdJrphlul8DqGnhu9Lsf78qWa8ga6tc8gxTvHJH.Rndaoe8QJdy1UWW8VJXsdmI5a4dkHmEJAByPsotzALNkhv8_GMYz0SeZ.T4uSEywMIl8CHU8qqql4096qqCiRfweT.AUFw352.ykBZJNab7cxWJ2AXYKZR3vYOlKZqx2GXMUWGEvahRrWTm6lMl6m!x7z,aac,amr,asm,avi,bak,bat,bmp,bin,c,cab,css,csv,com,cpp,dat,dll,doc,dot,docx,exe,eot,fla,flc,fon,fot,font,gdb,gif,gz,gho,hlp,hpp,htc,ico,ini,inf,ins,iso,js,jar,jpg,jpeg,json,java,lib,log,mid,mp4,mpa,m4a,mp3,mpg,mkv,mod,mov,mim,mpp,msi,mpeg,obj,ocx,ogg,olb,ole,otf,py,pyc,pas,pgm,ppm,pps,ppt,pdf,pptx,png,pic,pli,psd,qif,qtx,ra,rm,ram,rmvb,reg,res,rtf,rar,so,sbl,sfx,swa,swf,svg,sys,tar,taz,tif,tiff,torrent,txt,ttf,vsd,vss,vsw,vxd,woff,woff2,wmv,wma,wav,wps,xbm,xpm,xls,xlsx,xsl,xml,z,zip,apk,plist,ipaqHVQeGdCsfF8fPyD9k162 tMXe1fGcqDgYiff8kcZ2WvA81cNEqC9_Ac7wWNkDsqxlrvajGWcxHMayBcOyJsGL0xVlk1GN4Yuq5Y1wgqoaYHnzMc9L7pSY6rCAdUqlPxCSUU1mHHC7wYqpaETqTxpy5tmQ_MqYVrbEyMS26hvgdASSSJUGIp1TscVALoP9FtVAiRmf9kva8Qq2Ptl9tVPNbYvLWRn2BkV7IMPNdopErwYzWUYAkWp3xxqlQrGguUcEekA7nrqZKWYynHkaz8k0GkU3awSggm1W3FS3RUr98Dnz2tDlOosGfqpfUFPWEckWhHn7ND0g6VpaYqkxrEaVaJPgDcpLvr1gNcpQnqqGwkagyDf7mpPgmkqqJmTQ_JugcpPVMk1Zxh0TFDpLkcANqsVQgsAs7U4WruuUqEi7K7GI7i4JwaA_.VAqZrvlNrbWAwpNnl19c3SfTo6JUJ0l61uRWpuxqxu3ZUPSJzcvLFiRO5nO7QXfjt1074790432qqc80r0qqDdfe167l3650qq}XWIWknAUDcyNIGYb1YxppnaBHqQmIvV8VYNem9lqXpKpAFYz63bmqw2zTpbxQIDmeUUfsMmw7qkQhHAffYCQ1VmmbKCYUsoT6KoJp3SLd3Umw8Y27VCNUKTydAUQQQTNiVV2mA9prwl2sYYLqDaRTslRZVT2MsYrrYa3Yc0pYAlxMUYaVDSNrpYyIpfZYDrVAFAzBr4qqk136r0qq~Flsq21KQrFVRwKcNzRUTL8mfRtAJfQCYTEUTnsnNT8mfMpUgOtoN_tl7WIkqGQnLx1aL2hTak1omIECpT36gbt1LWt1frJoAPQCfUWb3aKkmkHPLupupC399VpbQ2mmLyVD0bq1LsKkY9xYg.ArqfVYQU8pzQVvEhp2TZE2zRIGr6mbVeRSqji2So81msE1l1YsfdA635K9y4iKE5Vay.lcLZU5fxzmi6pHzygCK5IwxwavHcwwGPZcU_H5f6_ccgx.Ld5btjQjmagbtzwBy2ZDiOHdS6dcc7xjgdebtbUzxoCm.hYRJ2Tou0t7l9vohNxWeqCmMSxRmcunO8Udy8Clol8eQj.B9KuvdiGYQnUh.PTljBr1wnP2OHpu8qIBC5V3DRzs9VqqqqqqMVVm2wbxaRvRLIKJnRvxvwCwSFU0r1qqXAOo30eljTuAgmeehhIUrtA;4kUyzUi8kgD7ll6J2MqFBA;V3SY1EmAPVnJMhTVjKnyK";
-    var cc=run(meta,'XW2Z9XILAQG' ,4, 26, 62, 'Q9IxRmrinWXBbBFW57VJE9' ,'CVkh9J0JPONazkR.VsU.ZA ','KInhKA_XHWq');
+    meta ="{qc80qDdfe167q}R3PfAl27FKlAoUlxzqY9hKqw6hYEEYqmD1fASUqTKcVlkAAw5k2GpV9SLc2WrYfYImmL9hqWncbYhM1VfmfWkJq7bqcAo3VYXmcgAHa7PkD2h3plGkOGK89YupU0yRkZCVDTUFTGClkWoJp3emOAJWqxzKmp1KSqolS3hmGwhqAQrkaQqk135q~FllE9iCRuFkrQhP7IRqeNr29vtomGqKAkEqzuH17o8sRFt6ZStKf4H9LFI1Ef317U1fA9HY0p1Kw8JKYv3bavrn7PtrNqrvVVQ2yKqDQcKAecqc7rpGR6YlGPpTV9x27UVVWvln7rK1J2WTZyAAEGsT3x8q2wAoWwp0zeWmNhI5yC5DsHRXE.umCS8JJ10nk7YWR57UIWK4f_uCHWVBSjdPB1UBNEN2tfp8TgZK17IWSQ6ohAwWLOyPs7HBNC5PDKxyA5nDi3QywSTDiIwZS9ubtwH7yCuPDFxyG5SDiVUdSDe2BRYEm9av6PteW2OvH6xwmrn2IOxEwkC1vWUXSIz9cj8jV.qqqMK1ezmC0EMGJBqbloMaxXrbGoMAAqXAOo30eljTuAgmeehhIUrtA;4kUyzUi8kgD7ll6J2MqFBA;qK.IA.EoiM8qZ6FEN2Dpr2aaqlpWS.qqq|gVPzbrKVIrVAS1kZRR2gZRDRycv9OVpLWiAW.VCx.ml0qUAwElpEORKz630QdJkmyJGZ4DsATi1wjlfRdJu0IDrly3GqVmqq1rr33rs0VESQ9xsLQx1g0rqGZcOZS3DRzxAE4MalwcPZjWkpz32pPVCwUmAE5mbQhWSQfqcQcckaqrPEFDa7JqO3bFGWKmaYEDr9GWfQYEcRGADqfrPEaicGQFSqkWOwmrVLRxaMhieVA5f6p3W9P7roz3hmf0bsSi7SvBC.3iQWbCPINJdZ5aSHgciQeuK1zEZpGqqqCk4Y.CbudFgNXCKuQiJG4GO5HHLg4POCEMFYX5D_OMFVdes6CFjQ5ZGqiVwRPgDOf3XSvgA!x7z,aac,amr,asm,avi,bak,bat,bmp,bin,c,cab,css,csv,com,cpp,dat,dll,doc,dot,docx,exe,eot,fla,flc,fon,fot,font,gdb,gif,gz,gho,hlp,hpp,htc,ico,ini,inf,ins,iso,js,jar,jpg,jpeg,json,java,lib,log,mid,mp4,mpa,m4a,mp3,mpg,mkv,mod,mov,mim,mpp,msi,mpeg,obj,ocx,ogg,olb,ole,otf,py,pyc,pas,pgm,ppm,pps,ppt,pdf,pptx,png,pic,pli,psd,qif,qtx,ra,rm,ram,rmvb,reg,res,rtf,rar,so,sbl,sfx,swa,swf,svg,sys,tar,taz,tif,tiff,torrent,txt,ttf,vsd,vss,vsw,vxd,woff,woff2,wmv,wma,wav,wps,xbm,xpm,xls,xlsx,xsl,xml,z,zip,apk,plist,ipaZWu9Qs2R3AmxoKpStY2rqY0RBqv9cQaJ0QGNToaWlFSpgIraGU1yKWS09pnrI tDlA9hU3TMsEgWClgIUA_EvlBIc2CMuGvIoE_k0Q5wOy6Wvahp6Qgio9_IKV_c6aGwrRqRclVYpenm2qYpSJsJ0LNUG2Ak0zUsswGkCyQ3PTfropMUnwYK6WtEqV7HKqo8OYoHvgnhrVjobLLKSpKJYqaU9prhTLhJ9RMnm8awi0N0o1C8emC76dshINpuYhe3zZ.C9nO8IRi_cXN87RB6Y49KzxAg6sDKBSW40jBE8SMaPvNtWwY6VhTYXTWaCujIypX0YFVFNJ6nmhpY5YnC6kzYeYC6cCRs50Ly6sFU3JIalo3FLwyGV6cAQxz6Pv.3JqXCK6zIIYtOCDnF4rpf0_Ah4g72bjqKgeX99jRAMGCG650wH9GPu.BM.m0No6Bi.NPX2tp8RZByDbZV.epBT6.UMNV_TdZxGr0ql3650qr4qr0q.zy3zH3tIsy_AFNgjkErNicQUICKn5gngwj8u3Rj1FFLqqqr1qVUqezib79MPrjECGGMPmjqhQfG4ExW2DOCqr0qhnEaRWBl9Rb2qYdVoU.Wc1K.OnUI6D0pRwGql4096qhn.CMXw5TBwdqk162qt1074790432q";
+    var cc=run(meta, 'nt6gvVehgRa', 5, 28, 144, 'eyc4.zSd1M8rL6R1SnG4dA', 'SbhOOMXPTNaHQQpM53rrXq', 'g03Sg4AVfvG');
     // return cc;
     // console.log(cc)
     // return 111
@@ -5685,4 +5699,10 @@ function gettest() {
 
 
 }
-// gettest();
+gettest();
+
+
+
+
+
+// [103, 126, 181, 203]
