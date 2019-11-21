@@ -5309,7 +5309,7 @@ function _$hn(_$yP, _$CT) {
 function _$0b(_$yP) {
     var _$jy = _$yP[_$ZD[9]](0, 16), _$yj, _$2R = 0, _$zT, _$Ld = 'abs';
     // _$U6._$td(_$jy);
-     _$jy=swith(_$jy);
+    _$jy=swith(_$jy);
     _$zT = _$jy.length;
     while (_$2R < _$zT) {
         _$yj = _$pw[_$Ld](_$jy[_$2R]);
@@ -5590,12 +5590,13 @@ function swith(_$2o) {
 function f4() {  // 目前没有完成
     var _$jy = _$W6(_$U6._$Sv);
     // [_$U6._$rC, _$U6._$6_, _$U6._$C5, _$U6._$vt]=[11, 126, 101, 181];// < 178)更进//定值  //
-    [_$U6._$rC, _$U6._$6_, _$U6._$C5, _$U6._$vt]= [203, 126, 103, 181];  //暂定为定值
+    [_$U6._$rC, _$U6._$6_, _$U6._$C5, _$U6._$vt]= [203, 224, 180, 100];  //暂定为定值
     // [_$U6._$rC, _$U6._$6_, _$U6._$C5, _$U6._$vt]=[100, 224, 180, 203]
     // console.log('当前数组是',[_$U6._$rC, _$U6._$6_, _$U6._$C5, _$U6._$vt]);
     return _$jy[_$ZD[29]]([_$U6._$rC, _$U6._$6_, _$U6._$C5, _$U6._$vt]);
     //[203, 126, 103, 181]
     //[181, 126, 103, 203]
+    //[203, 224, 180, 100]
 
 }
 
@@ -5684,7 +5685,7 @@ function run(meta,key,key2,key3,key4,key5,key6,key7) {
     (_$a6());
     _$BJ();//此处第一次生成cookies
     var cookies=f();//生成cookies
-    // // console.log(cookies);
+    console.log(cookies);
     return cookies;
 
 }
