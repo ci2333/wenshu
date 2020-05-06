@@ -19,3 +19,4 @@ console.log(b)
 
  M && (x = e.token + "@" + S(e, e.token),
  //此处找到dv加密  dv加密为鼠标轨迹，可以模仿
+ // e.loginFn  此处为from表单提交的条件,可以找到各个参数
