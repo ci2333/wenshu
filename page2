@@ -20,3 +20,16 @@ console.log(b)
  M && (x = e.token + "@" + S(e, e.token),
  //此处找到dv加密  dv加密为鼠标轨迹，可以模仿
  // e.loginFn  此处为from表单提交的条件,可以找到各个参数
+
+gid=function() {
+    return "xxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function(e) {
+        var t = 16 * Math.random() | 0
+            , n = "x" === e ? t : 3 & t | 8;
+        return n.toString(16)
+    }).toUpperCase()
+}();
+//
+// // token ajxli获取
+// // rsakey ajxli获取  initTime
+//
+// console.log(gid);
